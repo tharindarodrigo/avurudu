@@ -13,6 +13,14 @@ use Mockery\CountValidator\Exception;
 
 class ObstacleRaceController extends Controller
 {
+
+    public function __construct()
+    {
+        if (!auth()->check()) {
+            return Redirect::to('login')->send();
+        }
+    }
+
     public function index()
     {
         $obstacle = ObstacleRace::where('user_id',Auth::id())->first();

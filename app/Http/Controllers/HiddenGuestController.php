@@ -13,6 +13,13 @@ use Mockery\CountValidator\Exception;
 
 class HiddenGuestController extends Controller
 {
+    public function __construct()
+    {
+        if (!auth()->check()) {
+            return Redirect::to('login')->send();
+        }
+    }
+
     public function index()
     {
         $hiddenGuest = HiddenGuest::where('user_id',Auth::id())->first();
