@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('obstacle-race', 'ObstacleRaceController');
 Route::resource('hidden-guest', 'HiddenGuestController');
+
+Route::get('kana-mutti', 'KanaMuttiController@getGame');
+Route::get('drifting-tree', 'DriftingTreeController@getGame');
