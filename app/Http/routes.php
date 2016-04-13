@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('obstacle-race', 'ObstacleRaceController');
+Route::resource('hidden-guest', 'HiddenGuestController');
