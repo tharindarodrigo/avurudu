@@ -752,6 +752,10 @@
                 $("#attempt5").addClass("label label-danger");
 
 
+                $.post('http://linksherer/kanamutti', {time: y, userID: "id HEre", attempts:  clickCount},
+                        function (returnedData) {
+                            window.close();
+                        });
 
 
                 $("#result").slideDown(1000).html("<h3 align='center'> කණගාටුයි ,  දිනුම ඔබෙන් ගිලිහී ගියා ,  කණාමුට්ටි ගැසුවාට ඔබට ස්තුතියි !  </h3>");
@@ -790,7 +794,10 @@
 
                  */
 
-
+                $.post('http://linksherer/kanamutti', {time: y, userID: "id HEre", attempts:  clickCount},
+                        function (returnedData) {
+                            window.close();
+                        });
 
 
 
