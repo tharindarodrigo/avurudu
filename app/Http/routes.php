@@ -23,4 +23,6 @@ Route::resource('obstacle-race', 'ObstacleRaceController');
 Route::resource('hidden-guest', 'HiddenGuestController');
 
 Route::get('kana-mutti', 'KanaMuttiController@getGame');
+Route::post('kana-mutti-post', 'KanaMuttiController@setData');
 Route::get('drifting-tree', 'DriftingTreeController@getGame');
+Route::post('drifting-tree-post', 'DriftingTreeController@setData');

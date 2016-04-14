@@ -159,7 +159,7 @@
                             $("#comments").html( "<h3>ඔයා හොඳයිනේ  :P </h3>" );
                             $("#panel").slideDown(1200).html("<h2 align='center'>ඔබ උත්සාහ කිරීම්  "+att+"කින් තරඟය නිම කලා , උත්සාහ කිරීම් අඩුම ගණනකින් කොඩිය ලබා ගන්නා තැනැත්තා ජයග්‍රාහකයා වේ . , ඔබට ස්තුතියි !</h2>");
 
-                            $.post('http://linksherer/kanamutti', {time: y, userID: "id HEre", attempts:  clickCount},
+                            $.post('http://'+window.location.host+'/drifting-tree-post', {time: y, userID: "id HEre", attempts:  clickCount},
                                     function (returnedData) {
                                         window.close();
                                     });

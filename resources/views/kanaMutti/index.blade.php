@@ -752,7 +752,7 @@
                 $("#attempt5").addClass("label label-danger");
 
 
-                $.post('http://linksherer/kanamutti', {time: y, userID: "id HEre", attempts:  clickCount},
+                $.post('http://'+window.location.host+'/kana-mutti-post', {time: y, userID: "id HEre", attempts:  clickCount},
                         function (returnedData) {
                             window.close();
                         });
@@ -794,7 +794,7 @@
 
                  */
 
-                $.post('http://linksherer/kanamutti', {time: y, userID: "id HEre", attempts:  clickCount},
+                $.post('http://'+window.location.host+'/kana-mutti-post', {time: y, userID: "id HEre", attempts:  clickCount},
                         function (returnedData) {
                             window.close();
                         });
